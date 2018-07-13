@@ -6,7 +6,6 @@ path = YAML.load_file('lib/emoticons.yml')
 def load_library(path)
   emoticons =  path
   translations = {"get_meaning" => {},"get_emoticon" => {} } 
-  binding.pry
   translations.each do |keys,values|
     path.each do |text,emotes|
       if keys == "get_meaning"
