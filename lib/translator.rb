@@ -7,7 +7,7 @@ def load_library(file_path)
   emoticons = file_path
   translations = {"get_meaning" => {},"get_emoticon" => {} } 
   translations.each do |keys,values|
-    path.each do |text,emotes|
+    emoticons.each do |text,emotes|
       if keys == "get_meaning"
         values[emotes[1]] = text 
       else 
