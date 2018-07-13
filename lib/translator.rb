@@ -3,8 +3,8 @@ require 'pry'
 
 path = YAML.load_file('lib/emoticons.yml')
 
-def load_library(path)
-  emoticons = path
+def load_library(file_path)
+  emoticons = file_path
   translations = {"get_meaning" => {},"get_emoticon" => {} } 
   translations.each do |keys,values|
     path.each do |text,emotes|
@@ -39,4 +39,4 @@ end
 
 load_library(path)
 
-puts get_english_meaning path,"(＾ｖ＾)"
+#puts get_english_meaning path,"(＾ｖ＾)"
