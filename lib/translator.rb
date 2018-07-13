@@ -35,4 +35,4 @@ end
 
 load_library(path)
 
-puts get_japanese_emoticon path,[":)",":'(","=D"]
+puts get_japanese_emoticon path,":)",":'(","=D"
