@@ -18,7 +18,7 @@ def load_library(path)
   translations
 end
 
-def get_japanese_emoticon path,*emoticon 
+def get_japanese_emoticon path,emoticon 
   emoticon_hash = load_library path
   emoticon_hash["get_emoticon"].each do |eng,jap|
     binding.pry
@@ -35,4 +35,4 @@ end
 
 load_library(path)
 
-puts get_japanese_emoticon path,":)",":'(","=D"
+puts get_japanese_emoticon path,":)"
