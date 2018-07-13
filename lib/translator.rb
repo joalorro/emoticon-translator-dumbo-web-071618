@@ -21,9 +21,7 @@ end
 def get_japanese_emoticon path,emoticon 
   emoticon_hash = load_library path
   emoticon_hash["get_emoticon"].each do |eng,jap|
-    binding.pry
     if emoticon == eng 
-      binding.pry
       return jap
     end
   end
