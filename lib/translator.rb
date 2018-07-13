@@ -39,4 +39,4 @@ end
 
 load_library(path)
 
-puts get_english_meaning path,":)"
+puts get_english_meaning path,"(＾ｖ＾)"
