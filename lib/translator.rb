@@ -29,7 +29,7 @@ end
 
 def get_english_meaning path,emoticon
   emoticon_hash = load_library path 
-  binding.pry
+  
   emoticon_hash["get_meaning"].each do |emo,text|
     if emoticon == emo 
       return text 
